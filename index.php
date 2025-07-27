@@ -45,6 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
 </head>
 <body class="login-page">
     <div class="container-fluid">

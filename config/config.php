@@ -1,6 +1,6 @@
 <?php
 // Application Configuration
-define('APP_NAME', 'LIMS - Laboratory Information Management System');
+define('APP_NAME', 'C.H.A.R.L.E.N.E - Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement');
 define('APP_VERSION', '1.0.0');
 define('BASE_URL', 'http://localhost:8081/lims_project/');
 
