@@ -1,0 +1,490 @@
+:root {
+    --primary-black: #000000;
+    --primary-gold: #FFD700;
+    --accent-white: #FFFFFF;
+    --dark-gray: #1a1a1a;
+    --light-gray: #2a2a2a;
+    --medium-gray: #3a3a3a;
+    --text-light: #f8f9fa;
+    --text-muted: #6c757d;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --info: #17a2b8;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Text Colors */
+.text-gold {
+    color: var(--primary-gold) !important;
+}
+
+.text-white {
+    color: var(--accent-white) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Background Colors */
+.bg-black {
+    background-color: var(--primary-black) !important;
+}
+
+.bg-dark-gray {
+    background-color: var(--dark-gray) !important;
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray) !important;
+}
+
+/* Button Styles */
+.btn-gold {
+    background-color: var(--primary-gold);
+    border-color: var(--primary-gold);
+    color: var(--primary-black);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+    color: var(--primary-black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+.btn-black {
+    background-color: var(--primary-black);
+    border-color: var(--primary-black);
+    color: var(--accent-white);
+    font-weight: 600;
+}
+
+.btn-black:hover {
+    background-color: var(--medium-gray);
+    border-color: var(--medium-gray);
+    color: var(--accent-white);
+}
+
+/* Card Styles */
+.card {
+    background-color: var(--light-gray);
+    border: 1px solid var(--medium-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    background-color: var(--primary-black);
+    color: var(--primary-gold);
+    border-bottom: 2px solid var(--primary-gold);
+    font-weight: 600;
+}
+
+.card-gold {
+    border-top: 4px solid var(--primary-gold);
+}
+
+/* Form Styles */
+.form-control {
+    background-color: var(--medium-gray);
+    border: 1px solid var(--light-gray);
+    color: var(--text-light);
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background-color: var(--medium-gray);
+    border-color: var(--primary-gold);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+.form-label {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.input-group-text {
+    background-color: var(--primary-gold);
+    color: var(--primary-black);
+    border-color: var(--primary-gold);
+}
+
+/* Table Styles */
+.table {
+    background-color: var(--light-gray);
+    color: var(--text-light);
+}
+
+.table th {
+    background-color: var(--primary-black);
+    color: var(--primary-gold);
+    border-color: var(--medium-gray);
+    font-weight: 600;
+}
+
+.table td {
+    border-color: var(--medium-gray);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--medium-gray);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+/* Badge Styles */
+.badge {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+.badge-gold {
+    background-color: var(--primary-gold);
+    color: var(--primary-black);
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: var(--primary-black) !important;
+    border-bottom: 3px solid var(--primary-gold);
+}
+
+.navbar-brand {
+    color: var(--primary-gold) !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-gold) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-gold) !important;
+    font-weight: 600;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: var(--primary-black);
+    min-height: 100vh;
+    border-right: 3px solid var(--primary-gold);
+}
+
+.sidebar .nav-link {
+    color: var(--text-light);
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--medium-gray);
+    color: var(--primary-gold);
+    transform: translateX(5px);
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--primary-gold);
+    color: var(--primary-black);
+    font-weight: 600;
+}
+
+/* Login Page Styles */
+.login-page {
+    background-color: var(--dark-gray);
+    min-height: 100vh;
+}
+
+.bg-image {
+    background: linear-gradient(135deg, var(--primary-black) 0%, var(--dark-gray) 100%);
+    position: relative;
+}
+
+.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23FFD700" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Dashboard Styles */
+.dashboard-header {
+    background: linear-gradient(135deg, var(--primary-black) 0%, var(--dark-gray) 100%);
+    color: var(--accent-white);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border: 2px solid var(--primary-gold);
+}
+
+.stats-card {
+    background: linear-gradient(135deg, var(--light-gray) 0%, var(--medium-gray) 100%);
+    border: 1px solid var(--primary-gold);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-card .icon {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.stats-card .number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-white);
+    margin-bottom: 0.5rem;
+}
+
+.stats-card .label {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success);
+    border-left-color: var(--success);
+}
+
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: var(--warning);
+    border-left-color: var(--warning);
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger);
+    border-left-color: var(--danger);
+}
+
+.alert-info {
+    background-color: rgba(23, 162, 184, 0.1);
+    color: var(--info);
+    border-left-color: var(--info);
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: var(--light-gray);
+    border: 1px solid var(--medium-gray);
+}
+
+.modal-header {
+    background-color: var(--primary-black);
+    color: var(--primary-gold);
+    border-bottom: 2px solid var(--primary-gold);
+}
+
+.modal-footer {
+    background-color: var(--medium-gray);
+    border-top: 1px solid var(--light-gray);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.rounded-gold {
+    border-radius: 10px;
+    border: 2px solid var(--primary-gold);
+}
+
+.shadow-gold {
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-form {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .stats-card {
+        margin-bottom: 1rem;
+    }
+    
+    .dashboard-header {
+        padding: 1.5rem;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .sidebar.show {
+        left: 0;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-gold);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e6c200;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 4px solid var(--medium-gray);
+    border-top: 4px solid var(--primary-gold);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
