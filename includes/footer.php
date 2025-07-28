@@ -7,7 +7,7 @@
                 <div class="col-md-6 text-md-left">
                     <p class="mb-0 text-white">
                         <i class="fas fa-flask text-gold"></i>
-                        &copy; <?php echo date('Y'); ?> LIMS Hospital - Laboratory Information Management System
+                        &copy; <?php echo date('Y'); ?> C.H.A.R.L.E.N.E - Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement
                     </p>
                 </div>
                 <div class="col-md-6 text-md-right">
