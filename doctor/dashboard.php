@@ -30,8 +30,8 @@ $user = get_user_info();
 $doctor_id = $user['id'];
 $doctor_name = $user['name'];
 
-$page_title = 'Patient Management';
-$current_page = 'patient_history';
+$page_title = 'Dashboard';
+$current_page = 'Dashboard';
 
 // Handle patient actions
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     // Validate patient ID
     if ($patient_id <= 0) {
         $_SESSION['error_message'] = "Invalid patient ID.";
-        redirect("dashboard.php");
+        
     }
     
     try {
@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
                 $stmt->execute([$patient_id]);
                 if (!$stmt->fetch()) {
                     $_SESSION['error_message'] = "Patient not found.";
-                    redirect("dashboard.php");
+                    
                 }
                 
                 // Hard delete (since we don't have deleted_at column)
@@ -146,7 +146,7 @@ if ($patient_id > 0) {
         
         if (!$patient_info) {
             $_SESSION['error_message'] = "Patient not found.";
-            redirect("dashboard.php");
+            
         }
     } catch (Exception $e) {
         $_SESSION['error_message'] = "Error loading patient: " . $e->getMessage();
@@ -250,6 +250,7 @@ require_once '../includes/header.php';
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="container-fluid">
