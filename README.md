@@ -1,11 +1,11 @@
 # C.H.A.R.L.E.N.E
 
-#🧬 C.H.A.R.L.E.N.E
+# 🧬 C.H.A.R.L.E.N.E
 Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement
 
 C.H.A.R.L.E.N.E is a secure and intuitive web-based system designed to digitize and optimize hospital laboratory workflows. It enhances communication between doctors, lab technicians, and administrators while ensuring accurate and timely delivery of lab results.
 
-#📌 Features
+# 📌 Features
 
 🩺 Patient Management
 Register new patients and view their medical history.
@@ -25,7 +25,7 @@ Secure access and workflows tailored for doctors, lab staff, and admins.
 📈 Reporting & Audits
 Generate analytical reports and maintain an audit trail of all activities.
 
-#🛠️ Technologies Used
+# 🛠️ Technologies Used
 1. Backend: PHP 7.4+
 
 2. Frontend: HTML5, CSS3, JavaScript
@@ -36,7 +36,7 @@ Generate analytical reports and maintain an audit trail of all activities.
 
 5. Security: Session-based authentication, prepared statements, input sanitization
 
-#🧬 Database Schema
+# 🧬 Database Schema
 
 1. users — System users (doctors, lab techs, admins)
 
@@ -54,7 +54,7 @@ Generate analytical reports and maintain an audit trail of all activities.
 
 - Import the schema from database/lims_database.sql
 
-#🎨 UI Theme
+# 🎨 UI Theme
 1. Primary: Black #000000
 
 2. Highlight: Gold #FFD700
@@ -65,12 +65,9 @@ Generate analytical reports and maintain an audit trail of all activities.
 
 5. Typography: Clean and professional white/gold on dark UI
 
-#⚙️ Setup Instructions
+# ⚙️ Setup Instructions
 1. Clone the repository:
 
-bash
-Copy
-Edit
 git clone https://github.com/Purengugi/C.H.A.R.L.E.N.E.git
 
 2. Import the database:
@@ -101,6 +98,6 @@ Recommended: XAMPP / WAMP
 
 📊 Interactive dashboard with charts and KPIs
 
-#🤝 Contributions
+# 🤝 Contributions
 We welcome all contributions!
 Feel free to fork the repository, create a feature branch, and open a pull reques
