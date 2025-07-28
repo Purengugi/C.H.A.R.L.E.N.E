@@ -66,23 +66,23 @@ Generate analytical reports and maintain an audit trail of all activities.
 # ⚙️ Setup Instructions
 1. Clone the repository:
 
-git clone https://github.com/Purengugi/C.H.A.R.L.E.N.E.git
+   git clone https://github.com/Purengugi/C.H.A.R.L.E.N.E.git
 
 2. Import the database:
 
-Use lims_database.sql located in the database/ folder via phpMyAdmin or MySQL CLI.
+   Use lims_database.sql located in the database/ folder via phpMyAdmin or MySQL CLI.
 
 3. Update configuration:
 
-Open config/database.php and set your DB credentials.
+   Open config/database.php and set your DB credentials.
 
 4. Start your local server:
 
-Recommended: XAMPP / WAMP
+   Recommended: XAMPP / WAMP
 
 5. Launch the application:
 
-6. Navigate to http://localhost/charlene/ in your browser.
+   Navigate to http://localhost/charlene/ in your browser.
 
 # 🚀 Planned Enhancements
 
@@ -98,4 +98,4 @@ Recommended: XAMPP / WAMP
 
 # 🤝 Contributions
 We welcome all contributions!
-Feel free to fork the repository, create a feature branch, and open a pull reques
+Feel free to fork the repository, create a feature branch, and open a pull request
