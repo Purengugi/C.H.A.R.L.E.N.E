@@ -1,11 +1,12 @@
 # C.H.A.R.L.E.N.E
 
-🧬 C.H.A.R.L.E.N.E
+#🧬 C.H.A.R.L.E.N.E
 Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement
 
 C.H.A.R.L.E.N.E is a secure and intuitive web-based system designed to digitize and optimize hospital laboratory workflows. It enhances communication between doctors, lab technicians, and administrators while ensuring accurate and timely delivery of lab results.
 
-📌 Features
+#📌 Features
+
 🩺 Patient Management
 Register new patients and view their medical history.
 
@@ -24,69 +25,72 @@ Secure access and workflows tailored for doctors, lab staff, and admins.
 📈 Reporting & Audits
 Generate analytical reports and maintain an audit trail of all activities.
 
-🛠️ Technologies Used
-Backend: PHP 7.4+
+#🛠️ Technologies Used
+1. Backend: PHP 7.4+
 
-Frontend: HTML5, CSS3, JavaScript
+2. Frontend: HTML5, CSS3, JavaScript
 
-Framework: Bootstrap 4 (responsive design)
+3. Framework: Bootstrap 4 (responsive design)
 
-Database: MySQL 8.0+
+4. Database: MySQL 8.0+
 
-Security: Session-based authentication, prepared statements, input sanitization
+5. Security: Session-based authentication, prepared statements, input sanitization
 
-🧬 Database Schema
-users — System users (doctors, lab techs, admins)
+#🧬 Database Schema
 
-patients — Patient demographics and records
+1. users — System users (doctors, lab techs, admins)
 
-test_requests — Doctor-generated test forms
+2. patients — Patient demographics and records
 
-test_results — Lab-entered test outcomes
+3. test_requests — Doctor-generated test forms
 
-test_catalog — Master list of supported tests
+4. test_results — Lab-entered test outcomes
 
-samples — Sample tracking and status
+5. test_catalog — Master list of supported tests
 
-audit_log — All logged actions for traceability
+6. samples — Sample tracking and status
 
-Import the schema from database/lims_database.sql
+7. audit_log — All logged actions for traceability
 
-🎨 UI Theme
-Primary: Black #000000
+- Import the schema from database/lims_database.sql
 
-Highlight: Gold #FFD700
+#🎨 UI Theme
+1. Primary: Black #000000
 
-Accent: White #FFFFFF
+2. Highlight: Gold #FFD700
 
-Background: Dark Gray #1a1a1a
+3. Accent: White #FFFFFF
 
-Typography: Clean and professional white/gold on dark UI
+4. Background: Dark Gray #1a1a1a
 
-⚙️ Setup Instructions
-Clone the repository:
+5. Typography: Clean and professional white/gold on dark UI
+
+#⚙️ Setup Instructions
+1. Clone the repository:
 
 bash
 Copy
 Edit
-git clone https://github.com/YourUsername/charlene.git
-Import the database:
+git clone https://github.com/Purengugi/C.H.A.R.L.E.N.E.git
+
+2. Import the database:
 
 Use lims_database.sql located in the database/ folder via phpMyAdmin or MySQL CLI.
 
-Update configuration:
+3. Update configuration:
 
 Open config/database.php and set your DB credentials.
 
-Start your local server:
+4. Start your local server:
 
 Recommended: XAMPP / WAMP
 
-Launch the application:
+5. Launch the application:
 
-Navigate to http://localhost/charlene/ in your browser.
+6. Navigate to http://localhost/charlene/ in your browser.
 
-🚀 Planned Enhancements
+# 🚀 Planned Enhancements
+
 📱 Mobile-friendly design
 
 💬 Real-time notifications for test results
@@ -97,6 +101,6 @@ Navigate to http://localhost/charlene/ in your browser.
 
 📊 Interactive dashboard with charts and KPIs
 
-🤝 Contributions
+#🤝 Contributions
 We welcome all contributions!
 Feel free to fork the repository, create a feature branch, and open a pull reques
