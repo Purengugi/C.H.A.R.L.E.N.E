@@ -378,9 +378,7 @@ try {
                                                 </td>
                                                 <td>
                                                     <div class="btn-group" role="group">
-                                                        <button class="btn btn-sm btn-warning" onclick="editTest(<?php echo $test['id']; ?>)" title="Edit">
-                                                            <i class="fas fa-edit"></i>
-                                                        </button>
+                                                        
                                                         <button class="btn btn-sm btn-danger" onclick="deleteTest(<?php echo $test['id']; ?>, '<?php echo htmlspecialchars($test['test_name']); ?>')" title="Delete">
                                                             <i class="fas fa-trash"></i>
                                                         </button>
@@ -505,10 +503,7 @@ try {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
     <script>
-        function editTest(testId) {
-            // Implementation for editing test
-            alert('Edit test with ID: ' + testId);
-        }
+        
         
         function deleteTest(testId, testName) {
             if (confirm('Are you sure you want to delete the test "' + testName + '"? This action cannot be undone.')) {
