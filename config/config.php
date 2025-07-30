@@ -1,44 +1,29 @@
 <?php
 // Application Configuration
-define('APP_NAME', 'C.H.A.R.L.E.N.E - Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement');
+define('APP_NAME', getenv('APP_NAME') ?: 'C.H.A.R.L.E.N.E - Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement');
 define('APP_VERSION', '1.0.0');
-define('BASE_URL', 'http://localhost:8081/lims_project/');
+define('BASE_URL', getenv('BASE_URL') ?: 'http://localhost:8081/lims_project/');
 
 // Database Configuration
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'lims_hospital');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_NAME', getenv('DB_NAME') ?: 'lims_hospital');
+define('DB_USER', getenv('DB_USER') ?: 'root');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 
 // Security Configuration
-define('SESSION_TIMEOUT', 3600); // 1 hour
+define('SESSION_TIMEOUT', getenv('SESSION_TIMEOUT') ?: 3600); // 1 hour
 define('PASSWORD_MIN_LENGTH', 6);
 define('MAX_LOGIN_ATTEMPTS', 5);
 
-// File Upload Configuration
-define('MAX_FILE_SIZE', 5 * 1024 * 1024); // 5MB
-define('UPLOAD_DIR', 'uploads/');
-define('ALLOWED_EXTENSIONS', ['jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx']);
-
-// Email Configuration (for notifications)
-define('SMTP_HOST', 'localhost');
-define('SMTP_PORT', 587);
-define('SMTP_USER', 'noreply@hospital.com');
-define('SMTP_PASS', '');
-
 // System Settings
-define('TIMEZONE', 'Africa/Nairobi');
-define('DATE_FORMAT', 'Y-m-d');
-define('DATETIME_FORMAT', 'Y-m-d H:i:s');
-define('DISPLAY_DATE_FORMAT', 'd/m/Y');
-define('DISPLAY_DATETIME_FORMAT', 'd/m/Y H:i');
-
-// Set timezone
+define('TIMEZONE', getenv('TIMEZONE') ?: 'Africa/Nairobi');
 date_default_timezone_set(TIMEZONE);
 
 // Error Reporting (disable in production)
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
+// ... rest of your existing config.php content ...
 
 // Auto-generate patient and request IDs
 function generatePatientID() {

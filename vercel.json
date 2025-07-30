@@ -4,47 +4,34 @@
     {
       "src": "**/*.php",
       "use": "@vercel/php"
+    },
+    {
+      "src": "assets/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/index.php",
-      "methods": ["GET"]
-    },
-    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1",
-      "methods": ["GET"]
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
     },
     {
-      "src": "/doctor/(.*)",
-      "dest": "/doctor/$1",
-      "methods": ["GET", "POST"]
-    },
-    {
-      "src": "/lab/(.*)",
-      "dest": "/lab/$1",
-      "methods": ["GET", "POST"]
-    },
-    {
-      "src": "/admin/(.*)",
-      "dest": "/admin/$1",
-      "methods": ["GET", "POST"]
-    },
-    {
-      "src": "/includes/(.*)",
-      "status": 403,
-      "methods": ["GET"]
-    },
-    {
-      "src": "/config/(.*)",
-      "status": 403,
-      "methods": ["GET"]
+      "src": "/(.*)",
+      "dest": "/index.php"
     }
   ],
   "env": {
     "APP_ENV": "production",
-    "DATABASE_URL": "@lims_database_url"
+    "APP_NAME": "C.H.A.R.L.E.N.E LIMS",
+    "BASE_URL": "https://your-vercel-app.vercel.app",
+    "DB_HOST": "@lims-db-host",
+    "DB_NAME": "@lims-db-name",
+    "DB_USER": "@lims-db-user",
+    "DB_PASS": "@lims-db-pass",
+    "SESSION_TIMEOUT": "3600",
+    "TIMEZONE": "Africa/Nairobi"
   }
 }
