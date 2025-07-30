@@ -1,5 +1,4 @@
-# 🧬 C.H.A.R.L.E.N.E
-Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement.
+# 🧬 Clinical Hub for Accurate Results, Lab Efficiency & Notification Enhancement (C.H.A.R.L.E.N.E)
 
 C.H.A.R.L.E.N.E is a secure and intuitive web-based system designed to digitize and optimize hospital laboratory workflows. It enhances communication between doctors, lab technicians, and administrators while ensuring accurate and timely delivery of lab results.
 
