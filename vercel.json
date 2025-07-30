@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.php",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/doctor/(.*)",
+      "dest": "/doctor/$1",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/lab/(.*)",
+      "dest": "/lab/$1",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "/admin/$1",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/includes/(.*)",
+      "status": 403,
+      "methods": ["GET"]
+    },
+    {
+      "src": "/config/(.*)",
+      "status": 403,
+      "methods": ["GET"]
+    }
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "DATABASE_URL": "@lims_database_url"
+  }
+}
