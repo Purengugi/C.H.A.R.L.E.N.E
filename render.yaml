@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-php-app
+    name: charlene-php
     env: php
     plan: free
     buildCommand: ""
