@@ -1,8 +1,10 @@
 services:
   - type: web
-    name: charlene-php
+    name: charlene-lims
     env: php
     plan: free
+    region: oregon
+    branch: main
     buildCommand: ""
     startCommand: ""
-    rootDir: ./
+    rootDir: .
